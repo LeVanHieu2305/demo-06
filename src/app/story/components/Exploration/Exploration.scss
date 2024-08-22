@@ -1,0 +1,85 @@
+.exploration {
+    position: relative;
+
+    .container {
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        margin: 0 8.3333333333vw;
+        padding: 0 0 24.3055555556vw;
+        position: relative;
+        z-index: 3;
+
+        .title {
+            position: relative;
+            z-index: 2;
+            font-size: 310px;
+            grid-column: 2 / 12;
+            letter-spacing: -0.7986111111vw;
+            line-height: 15.4861111111vw;
+            margin-bottom: 8.8194444444vw;
+            transform: translateX(-1.0416666667vw);
+            .title-mask {
+                height: 15.8333333333vw;
+                line-height: 12.5vw;
+                overflow: hidden;
+            }
+            .icon {
+                height: 3.6805555556vw;
+                right: 10.7638888889vw;
+                top: 3.125vw;
+                width: 3.6805555556vw;
+                position: absolute;
+            }
+        }
+
+        .label {
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            letter-spacing: 0;
+            position: relative;
+            height: 2.3611111111vw;
+            line-height: 2.5694444444vw;
+            padding-left: 1.5277777778vw;
+            grid-column: 1 / 3;
+            color: #e0ccbb;
+
+            .icon {
+                height: 0.8333333333vw;
+                transform: translate(-1.4930555556vw, 0.7638888889vw);
+                width: 0.8333333333vw;
+                will-change: transform;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .text {
+                display: flex;
+                position: relative;
+                transform-origin: top left;
+                z-index: 1;
+            }
+        }
+
+        .intro {
+            font-size: 43px;
+            letter-spacing: -0.1333333333vw;
+            grid-column: 4 / 10;
+            line-height: 1.3;
+        }
+
+        .intro:last-child {
+            grid-column: 8 / 13;
+            margin-top: 41.6666666667vw;
+        }
+    }
+
+    .background {
+        height: 100vw;
+        left: 50%;
+        top: 55.5555555556vw;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+}

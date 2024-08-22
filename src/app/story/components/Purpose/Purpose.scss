@@ -1,0 +1,170 @@
+.purpose {
+    position: relative;
+    background: #070707;
+    padding-bottom: 41.666666667vw;
+    .container {
+        display: grid;
+        margin: 0 8.3333333333vw;
+        position: relative;
+        z-index: 3;
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+
+        .label {
+            color: #e0ccbb;
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            letter-spacing: 0;
+            height: 2.3611111111vw;
+            line-height: 2.5694444444vw;
+            padding-left: 1.5277777778vw;
+            grid-column: 2 / 3;
+            .icon {
+                height: 0.8333333333vw;
+                transform: translate(-1.4930555556vw, 0.7638888889vw);
+                width: 0.8333333333vw;
+                will-change: transform;
+                position: absolute;
+                z-index: 1;
+            }
+            .text {
+                display: flex;
+                position: relative;
+                transform-origin: top left;
+                z-index: 1;
+            }
+        }
+
+        .title {
+            font-size: 310px;
+            grid-column: 2 / 13;
+            letter-spacing: -0.7986111111vw;
+            line-height: 15.4861111111vw;
+            margin: 7.0833333333vw 0 4.8611111111vw;
+            transform: translateX(-1.0416666667vw);
+            .title-mask {
+                height: 15.8333333333vw;
+                line-height: 12.5vw;
+            }
+        }
+
+        .intro {
+            font-size: 43px;
+            grid-column: 2 / 7;
+            letter-spacing: -0.1333333333vw;
+        }
+        .link {
+            position: relative;
+            display: inline-flex;
+            font-size: 20px;
+            font-weight: 500;
+            justify-self: flex-start;
+            text-decoration: none;
+            align-self: flex-end;
+            grid-column: 11 / 13;
+
+            .circle {
+                align-items: center;
+                border-radius: 100%;
+                display: flex;
+                height: 2.7083333333vw;
+                justify-content: center;
+                left: -2.4222222222vw;
+                overflow: hidden;
+                position: absolute;
+                width: 2.7083333333vw;
+            }
+            .circle-fill {
+                background: #e0ccbb;
+                border-radius: 100%;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: scale(0);
+                opacity: 1;
+                will-change: transform;
+                z-index: 1;
+                transition: all 0.3s linear;
+            }
+            .circle-outline {
+                height: 0.4166666667vw;
+                width: 0.4166666667vw;
+                fill: none;
+                overflow: visible;
+                position: absolute;
+                display: block;
+            }
+            .circle-icon {
+                align-items: center;
+                bottom: 0;
+                color: #0d0e13;
+                display: flex;
+                justify-content: center;
+                left: 0;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                .icon-arrow {
+                    height: 0.6944444444vw;
+                    width: 0.7638888889vw;
+                }
+            }
+            .label {
+                will-change: transform;
+                padding-bottom: 0.1388888889vw;
+                transition: all 0.3s linear;
+                padding-left: 0;
+            }
+            .border {
+                bottom: 0;
+                height: 1px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                transform-origin: right;
+                transition: all 0.3s linear;
+                background: #e0ccbb;
+            }
+        }
+        .circle-outline circle {
+            stroke: #fff;
+            stroke-width: 1;
+        }
+        .circle-icon {
+            color: #000;
+            transform: translate(-100%, 0%);
+            transition: all 0.3s linear;
+        }
+        .link:hover {
+            .circle-fill {
+                opacity: 1;
+                transform: scale(1);
+            }
+            .label {
+                transform: translate(19.2px, 0);
+            }
+            .border {
+                transform: scale(0);
+            }
+            .circle-icon {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+        }
+    }
+
+    .background {
+        bottom: 0;
+        height: 47.9166666667vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        position: absolute;
+    }
+}

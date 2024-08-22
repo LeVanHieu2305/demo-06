@@ -1,0 +1,77 @@
+.gridzoom{
+    background-color: rgb(245, 238, 221);
+    position: relative;
+}
+
+.is-exploded {
+    overflow-x: visible;
+    overflow-y: inherit;
+    .container {
+        height: 500vh;
+        position: relative;
+    }
+    .wrapper{
+        height: 100vh;
+        // overflow: hidden;
+        position: sticky;
+        top: 0;
+    }
+    .media {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .image{
+        background-size: cover;
+        overflow: hidden;
+        position: absolute;
+    }
+    .media:first-child .image {
+        height: 30vh;
+        left: 36.8055555556vw;
+        top: 5vh;
+        width: 31.25vw;
+    }
+    .media:nth-child(2) .image {
+        height: 40vh;
+        left: 15.9722222222vw;
+        top: 22.5vh;
+        width: 19.1666666667vw;
+    }
+    .media:nth-child(3) .image {
+        height: 25vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 26.25vw;
+    }
+    .media:nth-child(4) .image {
+        height: 25vh;
+        left: 64.9305555556vw;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26.25vw;
+    }
+    .media:nth-child(5) .image {
+        height: 30vh;
+        left: 10.0694444444vw;
+        top: 65vh;
+        width: 31.25vw;
+    }
+    .media:nth-child(6) .image {
+        height: 30vh;
+        left: 43.0555555556vw;
+        top: 65vh;
+        width: 20.1388888889vw;
+    }
+    .media:nth-child(7) .image {
+        height: 12.8472222222vw;
+        left: 64.9305555556vw;
+        top: 65vh;
+        width: 19.1666666667vw;
+    }
+
+
+}

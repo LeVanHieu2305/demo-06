@@ -1,0 +1,299 @@
+.newsvideo {
+    background: #0d0e13;
+    color: #fff;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    pointer-events: none;
+    button,
+    input,
+    select,
+    textarea {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        font: inherit;
+        outline: 0;
+    }
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+    .nav {
+        margin: auto;
+        padding-top: 7.2916666667vw;
+        width: 26.3888888889vw;
+        display: flex;
+        pointer-events: all;
+        position: relative;
+        z-index: 4;
+        .button {
+            background: hsla(0, 0%, 100%, 0.4);
+            flex: 1;
+            height: 1px;
+            margin-right: 5px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            &:before {
+                content: "";
+                left: 0;
+                position: absolute;
+                width: 100%;
+                bottom: -0.6944444444vw;
+                height: 1.3888888889vw;
+                
+                transform: scaleX(0);
+                transform-origin: left;
+                background: hsla(0, 0%, 100%, 1);
+            }
+            &.active {
+                &:before {
+                    transition: transform 4s linear;
+                    transform: scaleX(1);
+                }
+            }
+        }
+        .indicator {
+            background: #fff;
+            height: 1px;
+            transform: scaleX(0);
+            width: 100%;
+
+            // transform-origin: 100% 50%;
+            // transform: scale(0, 1);
+        }
+    }
+
+    .h1 {
+        height: 1px;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 1px;
+    }
+
+    .scroll-to {
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 18px;
+        letter-spacing: 0.0266666667vw;
+        position: absolute;
+        right: 3.4722222222vw;
+        top: 100vh;
+        transform: translateY(-5.2083333333vw);
+        z-index: 2;
+    }
+
+    .items {
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        .item {
+            background: #0d0e13;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+            z-index: 1;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            transition: all 0.5s linear;
+            &.active {
+                // hiệu ứng
+                z-index: 3;
+                opacity: 1;
+                visibility: inherit;
+            }
+        }
+        .publisher {
+            display: flex;
+            margin: 8.6805555556vw auto auto;
+            width: 26.3888888889vw;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+        .avatar {
+            border-radius: 100%;
+            overflow: hidden;
+            height: 2.7777777778vw;
+            width: 2.7777777778vw;
+        }
+        .author {
+            display: inline-flex;
+            overflow: hidden;
+            position: absolute;
+            left: 3.4722222222vw;
+            top: 0.6944444444vw;
+        }
+        .author-line {
+            font-size: 18px;
+            letter-spacing: 0.0266666667vw;
+        }
+
+        .media {
+            bottom: 0;
+            left: 0;
+            opacity: 0.5;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(-640px, 0px) rotate(-7deg) scale(1.8, 1.8);
+        }
+        .item.active{
+            .media{
+            transform: translate(0px, 0px) rotate(0deg) scale(1);
+            }
+        }
+        //
+
+        .post {
+            margin: 0 auto 7.6388888889vw;
+            width: 26.3888888889vw;
+            pointer-events: all;
+            position: relative;
+            z-index: 1;
+            .title {
+                font-size: 42px;
+                letter-spacing: -0.1333333333vw;
+                margin-bottom: 1.7361111111vw;
+                font-weight: 400;
+                line-height: 1.3;
+            }
+            .text-mask,
+            .title-mask {
+                overflow: hidden;
+            }
+            .link {
+                position: relative;
+                display: inline-flex;
+                font-size: 20px;
+                font-weight: 500;
+                justify-self: flex-start;
+                text-decoration: none;
+                grid-column: 12 / 13;
+                margin-top: auto;
+
+                .circle {
+                    align-items: center;
+                    border-radius: 100%;
+                    display: flex;
+                    height: 2.7083333333vw;
+                    justify-content: center;
+                    left: -2.2222222222vw;
+                    overflow: hidden;
+                    position: absolute;
+                    top: -30%;
+                    width: 2.7083333333vw;
+                }
+                .circle-fill {
+                    background: #fff;
+                    border-radius: 100%;
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transform: scale(0);
+                    opacity: 1;
+                    will-change: transform;
+                    z-index: 1;
+                    transition: all 0.3s linear;
+                }
+                .circle-outline {
+                    height: 0.4166666667vw;
+                    width: 0.4166666667vw;
+                    fill: none;
+                    overflow: visible;
+                    position: absolute;
+                    display: block;
+                }
+                .circle-icon {
+                    align-items: center;
+                    bottom: 0;
+                    color: #0d0e13;
+                    display: flex;
+                    justify-content: center;
+                    left: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 2;
+                    .icon-external {
+                        height: 0.6944444444vw;
+                        width: 0.7638888889vw;
+                    }
+                }
+                .label {
+                    will-change: transform;
+                    padding-bottom: 0.1388888889vw;
+                    transition: all 0.3s linear;
+                }
+                .border {
+                    bottom: 0;
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    transform-origin: right;
+                    transition: all 0.3s linear;
+                    background: #fff;
+                }
+            }
+            .circle-outline circle {
+                stroke: #fff;
+                stroke-width: 1;
+            }
+            .circle-icon {
+                color: #000;
+                transform: translate(-100%, 0%);
+                transition: all 0.3s linear;
+            }
+            .link:hover {
+                .circle-fill {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                .label {
+                    transform: translate(19.2px, 0);
+                }
+                .border {
+                    transform: scale(0);
+                }
+                .circle-icon {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .next, .prev {
+        bottom: 0;
+        cursor: pointer;
+        pointer-events: all;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+}

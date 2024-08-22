@@ -1,0 +1,49 @@
+.mediatext {
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(245, 238, 221);
+    .container {
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0 8.3333333333vw;
+        display: grid;
+    }
+    .text {
+        grid-column: 2 / 5;
+        align-self: flex-start;
+        .label {
+            color: #0d0e13;
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            letter-spacing: 0;
+            position: relative;
+            height: 2.3611111111vw;
+            line-height: 2.5694444444vw;
+            padding-left: 1.5277777778vw;
+        }
+        .icon {
+            height: 0.8333333333vw;
+            transform: translate(-1.4930555556vw, 0.7638888889vw);
+            width: 0.8333333333vw;
+            will-change: transform;
+        }
+        .text {
+            display: flex;
+            position: relative;
+            transform-origin: top left;
+            z-index: 1;
+        }
+
+        .body {
+            color: rgba(13, 14, 19, 0.6);
+            font-size: 18px;
+            margin: 2.9861111111vw 0 0;
+        }
+    }
+
+    .media {
+        grid-column: 6 / 13;
+        margin-right: -19.1666666667vw;
+    }
+}

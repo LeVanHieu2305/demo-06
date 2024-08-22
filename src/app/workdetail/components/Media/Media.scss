@@ -1,0 +1,25 @@
+.media {
+    overflow: hidden;
+    position: relative;
+    .container{
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0 8.3333333333vw;
+        display: grid;
+        position: relative;
+        z-index: 1;
+    }
+    .assets {
+        grid-column: 2 / 12;
+        margin-bottom: 6.9444444444vw;
+    }
+    .assets:last-child {
+        margin-bottom: 13.8888888889vw;
+        margin-top: 13.8888888889vw;
+    }
+    .background {
+        will-change: transform;
+        position: absolute;
+        top: 0;
+    }
+}

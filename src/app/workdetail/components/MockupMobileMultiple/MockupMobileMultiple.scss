@@ -1,0 +1,63 @@
+.mockup-mobile-multiple{
+    background-color: rgb(5, 6, 8);
+    position: relative;
+    padding: 0;
+
+    .container {
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0 8.3333333333vw;
+        align-items: flex-start;
+        display: grid;
+        position: relative;
+    }
+
+    .media {
+        z-index: 1;
+    }
+
+    .media:first-child {
+        grid-column: 2 / 5;
+    }
+
+    .media:nth-child(2) {
+        grid-column: 8 / 11;
+        margin: 27.7777777778vw 0 13.8888888889vw;
+    }
+
+    .media:nth-child(3) {
+        grid-column: 4 / 7;
+        margin-top: -8.5416666667vw;
+    }
+    .background {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .top {
+        height: 13.8888888889vw;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: rgb(5, 6, 8);
+    }
+
+    .bottom {
+        bottom: 0;
+        height: 13.8888888889vw;
+        left: 0;
+        position: absolute;
+        right: 0;
+        background-color: rgb(18, 22, 22);
+    }
+}
+
+.has-padding-top-and-bottom .background {
+    bottom: 13.8888888889vw;
+    height: calc(100% - 27.77778vw);
+    top: 13.8888888889vw;
+}

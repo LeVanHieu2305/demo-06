@@ -1,0 +1,59 @@
+.journey {
+    padding: 0 0 69.4444444444vw;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 3;
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        margin: 0 8.3333333333vw;
+
+        .label {
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            letter-spacing: 0;
+            position: relative;
+            height: 2.3611111111vw;
+            line-height: 2.5694444444vw;
+            padding-left: 1.5277777778vw;
+            grid-column: 1;
+            color: #e0ccbb;
+
+            .icon {
+                height: 0.8333333333vw;
+                transform: translate(-1.4930555556vw, 0.7638888889vw);
+                width: 0.8333333333vw;
+                will-change: transform;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .text {
+                display: flex;
+                position: relative;
+                transform-origin: top left;
+                z-index: 1;
+            }
+        }
+
+        .intro {
+            font-size: 43px;
+            letter-spacing: -0.1333333333vw;
+            grid-column: 4 / 10;
+            line-height: 1.3;
+        }
+    }
+
+    .background {
+        bottom: -8.3333333333vw;
+        grid-column: 1 / 13;
+        height: 83.3333333333vw;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 83.3333333333vw;
+    }
+}

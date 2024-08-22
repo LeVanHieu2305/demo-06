@@ -1,0 +1,62 @@
+.has-padding-top-and-bottom {
+    padding: 10.4166666667vw 0;
+}
+.detailone {
+    position: relative;
+    .container {
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        margin: 0 8.3333333333vw;
+    }
+
+    .title.is-large {
+        font-size: 192px;
+        letter-spacing: -0.4vw;
+        line-height: 16vw;
+        margin: 0 0 3.9583333333vw;
+        grid-column: 4 / 13;
+        .title-mask {
+            height: 10.0694444444vw;
+            line-height: 7.6388888889vw;
+            overflow: hidden;
+        }
+    }
+
+    .label {
+        color: #0d0e13;
+        display: inline-flex;
+        font-size: 18px;
+        justify-self: flex-start;
+        font-weight: 400;
+        letter-spacing: 0;
+        position: relative;
+        height: 2.3611111111vw;
+        line-height: 2.5694444444vw;
+        padding-left: 1.5277777778vw;
+        grid-column: 2 / 4;
+        .icon {
+            position: absolute;
+            z-index: 1;
+            height: 0.8333333333vw;
+            transform: translate(-1.4930555556vw, 0.7638888889vw);
+            width: 0.8333333333vw;
+            will-change: transform;
+        }
+        .text {
+            will-change: transform;
+            display: flex;
+            position: relative;
+            transform-origin: top left;
+            z-index: 1;
+        }
+    }
+
+    .body {
+        grid-column: 4 / 8;
+        color: rgba(13, 14, 19, 0.6);
+        p {
+            font-size: 18px;
+        }
+    }
+}

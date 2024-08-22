@@ -1,0 +1,99 @@
+.the-apes {
+    margin-top: -2px;
+    padding: 0 0 13.8888888889vw;
+    background: #0d0e13;
+    color: #e4e0db;
+
+    .container {
+        position: relative;
+        display: grid;
+        margin: 0 8.3333333333vw;
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .label {
+        color: #fff;
+        display: inline-flex;
+        font-size: 18px;
+        justify-self: flex-start;
+        letter-spacing: 0;
+        height: 2.3611111111vw;
+        line-height: 2.5694444444vw;
+        padding-left: 1.5277777778vw;
+        position: absolute;
+        top: 36.8055555556vw;
+        .icon {
+            height: 0.8333333333vw;
+            transform: translate(-1.4930555556vw, 0.7638888889vw);
+            width: 0.8333333333vw;
+            will-change: transform;
+            position: absolute;
+            z-index: 1;
+        }
+        .text {
+            display: flex;
+            position: relative;
+            transform-origin: top left;
+            z-index: 1;
+        }
+    }
+
+    .title {
+        font-size: 192px;
+        letter-spacing: -0.4vw;
+        line-height: 16vw;
+        margin: 10.6666666667vw 0 6.9333333333vw;
+        grid-column: 4 / 13;
+        .title-mask {
+            height: 10.0694444444vw;
+            line-height: 7.6388888889vw;
+            overflow: hidden;
+        }
+        .title-line {
+            opacity: 0;
+            transition: all .5s ease-out;
+            visibility: hidden;
+            transform-origin: top left;
+            will-change: transform;
+            transform: translate(0px, 400px) rotate(20deg);
+        }
+    }
+    .body {
+        grid-column: 4 / 8;
+        p {
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: 1.4;
+        }
+    }
+    .images {
+        display: flex;
+        grid-column: 2 / 12;
+        .image {
+            height: auto;
+            overflow: hidden;
+            &:first-child {
+                height: 22.2222222222vw;
+                margin-top: 21.5972222222vw;
+                width: 33.3333333333vw;
+            }
+            &:nth-child(2) {
+                height: 28.6111111111vw;
+                margin-left: auto;
+                width: 19.1666666667vw;
+            }
+        }
+    }
+
+    .quote {
+        color: hsla(33, 14%, 88%, .8);
+        font-size: 14px;
+        letter-spacing: .0266666667vw;
+        line-height: 1.4;
+        position: relative;
+        border-top: 1px solid hsla(0, 0%, 100%, .2);
+        grid-column: 9 / 12;
+        margin-top: -12.5vw;
+        padding-top: 1.3888888889vw;
+    }
+}

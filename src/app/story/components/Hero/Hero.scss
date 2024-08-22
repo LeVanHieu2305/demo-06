@@ -1,0 +1,74 @@
+.hero {
+    background: #070707;
+    position: relative;
+    text-align: center;
+    padding: 19.7916666667vw 0 69.4444444444vw;
+    overflow: hidden;
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 8.3333333333vw;
+        position: relative;
+        z-index: 3;
+        .label {
+            color: #e0ccbb;
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            letter-spacing: 0;
+            position: relative;
+            height: 2.3611111111vw;
+            line-height: 2.5694444444vw;
+            padding-left: 1.5277777778vw;
+            .icon {
+                position: absolute;
+                z-index: 1;
+                height: .8333333333vw;
+                transform: translate(-1.4930555556vw, .7638888889vw);
+                width: .8333333333vw;
+                will-change: transform;
+            }
+
+            .text {
+                display: flex;
+                position: relative;
+                transform-origin: top left;
+                z-index: 1;
+            }
+        }
+
+        .title {
+            font-size: 310px;
+            letter-spacing: -.7986111111vw;
+            line-height: 15.4861111111vw;
+            margin: 5.2083333333vw 0;
+        }
+        .text-mask, .title-mask {
+            overflow: hidden;
+        }
+
+        .intro {
+            font-size: 43px;
+            letter-spacing: -.1333333333vw;
+            width: 44.0972222222vw;
+        }
+    }
+
+
+    .background {
+        height: 83.3333333333vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 83.3333333333vw;
+        bottom: 0;
+        position: absolute;
+        .videoo {
+            left: 0;
+            top: 6.9444444444vw;
+            position: absolute;
+            object-fit: contain;
+
+        }
+    }
+}

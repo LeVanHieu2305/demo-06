@@ -1,0 +1,98 @@
+.origin {
+    background: #070707;
+    padding: 0 0 69.4444444444vw;
+    position: relative;
+
+    .container {
+        grid-column-gap: 2.2222222222vw;
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        margin: 0 8.3333333333vw;
+
+        .label {
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            letter-spacing: 0;
+            position: relative;
+            height: 2.3611111111vw;
+            line-height: 2.5694444444vw;
+            padding-left: 1.5277777778vw;
+            grid-column: 1;    
+            color: #e0ccbb;
+            .icon {
+                position: absolute;
+                z-index: 1;
+                height: .8333333333vw;
+                transform: translate(-1.4930555556vw, .7638888889vw);
+                width: .8333333333vw;
+            }
+            .text {
+                display: flex;
+                position: relative;
+                transform-origin: top left;
+                z-index: 1;
+            }
+        }
+
+        .block:nth-child(2) {
+            grid-column: 3 / 8;
+        }
+
+        .block:nth-child(3) {
+            grid-column: 7 / 13;
+            margin-top: 5.5555555556vw;
+        }
+
+        .title {
+            display: flex;
+            position: relative;
+            font-size: 310px;
+            height: 15.625vw;
+            letter-spacing: -.7986111111vw;
+            line-height: 15.4861111111vw;
+            margin-bottom: 5.5555555556vw;
+            text-indent: -1.1805555556vw;
+        }
+        .title-mask {
+            height: 15.8333333333vw;
+            line-height: 12.5vw;
+            overflow: hidden;
+        }
+        .title-line {
+            padding-right: 1.0416666667vw;
+        }
+        .title small {
+            font-size: .8333333333vw;
+            letter-spacing: .0138888889vw;
+            line-height: .8333333333vw;
+            margin-bottom: 3.125vw;
+            text-indent: 0;
+            align-self: flex-end;
+            color: hsla(28, 37%, 81%, .6);
+        }
+
+        .body{
+            color: hsla(28, 37%, 81%, .8);
+            font-size: 18px;
+            letter-spacing: .0266666667vw;
+            width: 19.2361111111vw;
+        }
+    }
+
+    .background {
+        height: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 83.3333333333vw;
+        bottom: 0;
+        position: absolute;
+        .videoo {
+            left: 0;
+            top: 6.9444444444vw;
+            position: absolute;
+            object-fit: contain;
+
+        }
+    }
+}

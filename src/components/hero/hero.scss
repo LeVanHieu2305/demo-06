@@ -1,0 +1,217 @@
+.hero {
+    height: 136.6666666667vw;
+    overflow: hidden;
+    color: #fff;
+    pointer-events: none;
+    position: relative;
+}
+.hero .container {
+    margin: 0 8.3333333333vw;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .text-1,
+.hero .text-2 {
+    grid-column-gap: 2.2222222222vw;
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    align-items: flex-start;
+}
+.hero .intro {
+    grid-column: 1 / 7;
+    max-width: 36.8055555556vw;
+    padding-top: 30.5555555556vw;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.hero .text-line,
+.hero .title-line {
+    will-change: transform;
+    display: block;
+    text-align: start;
+    position: relative;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: inherit;
+}
+.hero .title {
+    font-size: 333px;
+    font-weight: 400;
+    letter-spacing: -1.2vw;
+    margin: 8.0555555556vw 0 6.875vw;
+    transform: translateX(-1.3888888889vw);
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 13;
+}
+.hero .title-mask {
+    height: 15.9722222222vw;
+    line-height: 12.7083333333vw;
+}
+
+.hero .icon-arrow {
+    display: none;
+}
+
+.hero .body {
+    grid-column: 1 / 6;
+    margin-bottom: 6.1111111111vw;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero .link {
+    display: inline-flex;
+    font-size: 20px;
+    justify-self: flex-start;
+    line-height: 1.3;
+    position: relative;
+    grid-column: 1 / 6;
+    pointer-events: all;
+    color: #fff;
+    text-decoration: none;
+}
+.hero .circle {
+    align-items: center;
+    border-radius: 100%;
+    display: flex;
+    height: 2.7083333333vw;
+    justify-content: center;
+    left: -2.2222222222vw;
+    overflow: hidden;
+    position: absolute;
+    top: -0.6944444444vw;
+    width: 2.7083333333vw;
+}
+
+.hero .circle-fill {
+    background: currentColor;
+    border-radius: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    will-change: transform;
+    z-index: 1;
+}
+
+.hero .circle-outline {
+    height: 0.4166666667vw;
+    width: 0.4166666667vw;
+    fill: none;
+    overflow: visible;
+    position: absolute;
+}
+.hero .circle-icon {
+    align-items: center;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.hero .icon-arrow {
+    height: 0.6944444444vw;
+    width: 0.7638888889vw;
+}
+
+.hero .label {
+    will-change: transform;
+    padding-bottom: 0.1388888889vw;
+}
+.hero .border {
+    will-change: transform;
+    background: currentColor;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform-origin: right;
+}
+
+.hero .list {
+    grid-column: 9 / 11;
+    margin-top: -3.8194444444vw;
+    pointer-events: all;
+}
+
+.hero .list-link {
+    font-size: 20px;
+    letter-spacing: 0.0266666667vw;
+    line-height: 2.5;
+    position: relative;
+    will-change: transform;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.hero .list-link:after {
+    background: currentColor;
+    bottom: -2px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+    width: 100%;
+    will-change: transform;
+}
+.hero .list-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+.hero .list:last-child {
+    grid-column: 11 / 13;
+}
+
+.hero .scroll-to {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.0266666667vw;
+    position: absolute;
+    right: 3.4722222222vw;
+    top: 100vh;
+    transform: translateY(-5.2083333333vw);
+    z-index: 2;
+
+    opacity: 1;
+    visibility: inherit;
+}
+
+.hero .background {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: all;
+    position: absolute;
+    right: 0;
+    top: 0;
+    img{
+        display: block;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+    .image {
+        -o-object-position: center top;
+        object-position: center top;
+        will-change: transform;
+    }
+}

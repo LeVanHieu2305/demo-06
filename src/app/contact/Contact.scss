@@ -1,0 +1,189 @@
+.contact {
+    background: #fff;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--vh, 1vh) * 100);
+    justify-content: center;
+    padding: 8.3333333333vw 0;
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+    .link {
+        margin: 0 auto;
+        display: inline-flex;
+        font-size: 20px;
+        font-weight: 500;
+        justify-self: flex-start;
+        letter-spacing: 0;
+        text-decoration: none;
+        .circle {
+            align-items: center;
+            border-radius: 100%;
+            display: flex;
+            height: 2.7083333333vw;
+            justify-content: center;
+            left: -2.2222222222vw;
+            overflow: hidden;
+            position: absolute;
+            top: -30%;
+            width: 2.7083333333vw;
+        }
+        .circle-fill {
+            background: #0d0e13;
+            border-radius: 100%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: scale(0);
+            opacity: 1;
+            will-change: transform;
+            z-index: 1;
+            transition: all 0.3s linear;
+        }
+        .circle-outline {
+            height: 0.4166666667vw;
+            width: 0.4166666667vw;
+            fill: none;
+            overflow: visible;
+            position: absolute;
+            display: block;
+        }
+        .circle-icon {
+            align-items: center;
+            bottom: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            left: 0;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            .icon-arrow {
+                height: 0.6944444444vw;
+                width: 0.7638888889vw;
+            }
+        }
+        .label {
+            will-change: transform;
+            padding-bottom: 0.1388888889vw;
+            transition: all 0.3s linear;
+        }
+    }
+    .icon-mail {
+        height: 0.6944444444vw;
+        width: 0.9027777778vw;
+    }
+    .icon-phone {
+        height: 0.8333333333vw;
+        width: 0.7638888889vw;
+    }
+    .icon-pin {
+        height: 0.7638888889vw;
+        width: 0.625vw;
+    }
+    .is-dark .border {
+        background: rgba(13, 14, 19, 0.4);
+        bottom: 0;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transform-origin: right;
+        transition: all 0.3s linear;
+    }
+    .is-dark .circle-outline circle {
+        stroke: #0d0e13;
+        stroke-width: 1;
+    }
+    .is-dark .circle-icon {
+        color: #fff;
+        transform: translate(-100%, 0%);
+        transition: all 0.3s linear;
+    }
+    .link.is-dark:hover {
+        .circle-fill {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .label {
+            transform: translate(19.2px, 0);
+        }
+        .border {
+            transform: scale(0);
+        }
+        .circle-icon {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+    .container {
+        margin: 0 8.3333333333vw;
+        position: relative;
+    }
+
+    .image {
+        height: 39.375vw;
+        margin-left: 35.625vw;
+        width: 26.3888888889vw;
+        position: relative;
+        z-index: 1;
+    }
+    .h1 {
+        height: 1px;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 1px;
+    }
+    .title {
+        bottom: 20vw;
+        font-size: 192px;
+        letter-spacing: -0.4vw;
+        margin-left: -8.3333333333vw;
+        display: flex;
+        position: absolute;
+        .marquee {
+            display: flex;
+            white-space: nowrap;
+        }
+    }
+
+    .left,
+    .right {
+        bottom: 0;
+        position: absolute;
+        .body {
+            margin-bottom: 120px;
+            width: 21.3888888889vw;
+            font-size: 18px;
+        }
+        .contact-item:first-child {
+            margin-bottom: 1.3888888889vw;
+        }
+        .link {
+            display: inline-flex;
+            font-size: 21px;
+            justify-self: flex-start;
+            position: relative;
+        }
+    }
+    .right {
+        left: 71.3194444444vw;
+        .address {
+            display: block;
+            font-size: 18px;
+            letter-spacing: 0.0266666667vw;
+            color: #0d0e13;
+            margin-bottom: 52px;
+        }
+    }
+}

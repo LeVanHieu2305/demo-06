@@ -1,0 +1,103 @@
+:root {
+    --vh: 9.19px;
+}
+.showreel {
+    position: relative;
+    background: #0d0e13;
+    color: #e4e0db;
+    cursor: pointer;
+    height: calc(var(--vh, 1vh) * 700);
+    .container {
+        height: calc(var(--vh, 1vh) * 100);
+        position: sticky;
+        top: 0;
+    }
+    .text {
+        position: absolute;
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        .label {
+            display: inline-flex;
+            font-size: 18px;
+            justify-self: flex-start;
+            position: absolute;
+            height: 2.3611111111vw;
+            padding-left: 1.5277777778vw;
+            top: 3.1944444444vw;
+            color: #e4e0db;
+            .icon {
+                display: block;
+                opacity: 1;
+                position: absolute;
+                z-index: 1;
+                height: 0.8333333333vw;
+                transform: translate(-1.4930555556vw, 0.7638888889vw);
+                width: 0.8333333333vw;
+                will-change: transform;
+            }
+            .text {
+                display: flex;
+                position: relative;
+                transform-origin: top left;
+                z-index: 1;
+                will-change: transform;
+            }
+        }
+        .title {
+            display: flex;
+            font-size: 190px;
+            font-weight: 400;
+            letter-spacing: -0.4vw;
+            line-height: 16vw;
+            .title-mask {
+                height: 10.0694444444vw;
+                line-height: 7.6388888889vw;
+                padding: 0 1.0416666667vw;
+                &:nth-child(1) {
+                    transform: translate(-370px, 0);
+                }
+                &:nth-child(2) {
+                    transform: translate(370px, 0);
+                }
+            }
+            .title-line {
+                visibility: visible;
+                transform-origin: top left;
+                will-change: transform;
+            }
+        }
+        .body {
+            bottom: 3.1944444444vw;
+            width: 20.8333333333vw;
+            font-size: 16px;
+            letter-spacing: 0.0266666667vw;
+            position: absolute;
+            text-align: center;
+        }
+        .icon {
+            display: none;
+            height: 22.9333333333vw;
+            opacity: 0;
+            width: 22.9333333333vw;
+        }
+    }
+
+    .video {
+        opacity: 0.3;
+        position: absolute;
+        height: calc(var(--vh, 1vh) * 100);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.3);
+        width: 100vw;
+        object-fit: cover;
+        // will-change: transform;
+    }
+}
