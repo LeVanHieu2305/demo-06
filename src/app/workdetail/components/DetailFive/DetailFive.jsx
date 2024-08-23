@@ -32,7 +32,7 @@ function DetailFive() {
         </h2>
         <div class="body">
           <p>
-            After diving into Columbia's 100 years and completing the
+            After diving into Columbia s 100 years and completing the
             quiz,&nbsp;visitors were presented with a personalized shareable
             through an&nbsp;automated asset generator.&nbsp;This asset —
             accompanied with a range of social sharing options —&nbsp;played an

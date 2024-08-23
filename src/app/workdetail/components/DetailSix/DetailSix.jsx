@@ -35,7 +35,7 @@ function DetailSix() {
             To provide visitors with an extra&nbsp;layer of personalization
             before sharing the generated asset, we implemented&nbsp;an editing
             tool that gave them the ability&nbsp;to tailor their final sharable.
-            Whether it's selecting their favorite villain, sidekick, or title,
+            Whether its selecting their favorite villain, sidekick, or title,
             this customization provided viewers the final say while showing them
             a range of hidden gems and films they may have missed.
           </p>

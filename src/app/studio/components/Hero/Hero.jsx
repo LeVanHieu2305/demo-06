@@ -74,11 +74,11 @@ function Hero() {
           <div className="body">
             <h3>
               We explore and push the boundaries of digital for brands and
-              businesses that strive to enhance people's lives through
+              businesses that strive to enhance people s lives through
               exceptional experiences.
             </h3>
             <p>
-              For over a decade, we've been using profound design aesthetics,
+              For over a decade, we ve been using profound design aesthetics,
               meticulously crafted details, and surprising interactions to
               create digital experiences that spark conversation, inspire
               action, and drive desirability.

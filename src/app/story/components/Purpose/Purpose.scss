@@ -2,6 +2,7 @@
     position: relative;
     background: #070707;
     padding-bottom: 41.666666667vw;
+    overflow: hidden;
     .container {
         display: grid;
         margin: 0 8.3333333333vw;
@@ -161,10 +162,44 @@
 
     .background {
         bottom: 0;
-        height: 47.9166666667vw;
         left: 50%;
         transform: translateX(-50%);
-        width: 100vw;
+        width: 60vw;
         position: absolute;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 91vw;
+            border: 15px solid #e0ccbb;
+            top: -50%;
+            left: 50%;
+            height: 170vh;
+            transform: translateX(-50%);
+            z-index: -1;
+            border-radius: 50%;
+        }
+
+        .box{
+            display: block;
+            position: absolute;
+            width: 81vw;
+            // border: 4px solid;
+            top: -32%;
+            left: 50%;
+            height: 170vh;
+            transform: translateX(-50%);
+            z-index: -1;
+            border-radius: 50%;
+        }
+        .box-cr{
+            position: absolute;
+            top: 33%;
+            right: 1.4%;
+            width: 10rem;
+            height: 10rem;
+            background: #e0ccbb;
+            border-radius: 50%;
+        }
     }
 }

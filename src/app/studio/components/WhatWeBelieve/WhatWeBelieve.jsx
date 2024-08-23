@@ -73,8 +73,8 @@ function WhatWeBelieve() {
           </p>
         </div>
         <blockquote className="quote">
-          "Our approach is informed by insight and research, but at the end of
-          the day, we focus on making people feel."
+          Our approach is informed by insight and research, but at the end of
+          the day, we focus on making people feel.
         </blockquote>
       </div>
       <div className="image">

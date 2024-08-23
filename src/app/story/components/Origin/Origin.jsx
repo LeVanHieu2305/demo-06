@@ -16,7 +16,7 @@ function Origin() {
         start: "60% 50%",
         end: "bottom 50%",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
       duration: 10,
       ease: "power2.inOut",
@@ -71,10 +71,10 @@ function Origin() {
                 Exo
               </div>
             </div>
-            <small class="animate">[ĕk′sō]</small>
+            <small class="animate">[ĕk sō]</small>
           </div>
           <p class="body animate">
-            The exosphere is the outermost layer of our earth's atmosphere and
+            The exosphere is the outermost layer of our earths atmosphere and
             symbolizes the bar that we keep setting for our team in order to
             push further, aim higher and keep growing— one project at a time.
           </p>

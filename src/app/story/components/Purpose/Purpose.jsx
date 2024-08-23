@@ -1,11 +1,25 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import "./Purpose.scss";
+import CanvasWithScrollAnimation from "../Canvas/Canvas";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Purpose() {
+  useEffect(() => {
+    gsap.to(".box", {
+      scrollTrigger: {
+        trigger: ".purpose",
+        start: "-20% 80%", 
+        end: "bottom 0%", 
+        scrub: true, 
+        markers: true,
+      },
+      x: -50,
+      rotationZ: -76, 
+    });
+  }, []);
   return (
     <section class="purpose">
       <div class="container">
@@ -71,7 +85,12 @@ function Purpose() {
         </a>
       </div>
       <div class="background">
-        <canvas class="canvas" width="1920" height="921"></canvas>
+        {/* <CanvasWithScrollAnimation imageUrl="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-dep-5.jpg" /> */}
+        <img src="../images/global.png" />
+        <div class="box">
+          <div className="box-cr">
+          </div>
+        </div>
       </div>
     </section>
   );

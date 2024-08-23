@@ -61,7 +61,7 @@ function HowWeWork() {
                 have, and curiosity is our most powerful tool. Our team is
                 guided by the principles of compassion and honesty in our
                 day-to-day communications, and we understand that people value
-                feeling more than information. That's why we pour a lot of soul
+                feeling more than information. Thats why we pour a lot of soul
                 and passion into our work, delivering experiences that touch
                 people on a deeper level.
               </p>
@@ -104,7 +104,7 @@ function HowWeWork() {
             <h3 className="subtitle">Simplicity is the dot on our horizon</h3>
             <div className="body">
               <p>
-                In today's world, we have become information-rich and time-poor.
+                In today s world, we have become information-rich and time-poor.
                 It is those who focus on what really matters that set the tone.
                 We approach every project with a keen eye for simplicity and
                 elegance. Great digital design is the perfect blend of form and

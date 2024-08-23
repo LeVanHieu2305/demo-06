@@ -6,6 +6,21 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Exploration() {
+  useEffect(() => {
+    gsap.to(".orbital", {
+      scrollTrigger: {
+        trigger: ".orbital",
+        start: "top 80%", // When the top of the canvas hits 80% of the viewport
+        end: "bottom 0%", // When the bottom of the canvas hits 20% of the viewport
+        scrub: true, // Smoothly animate in sync with scrolling
+        // markers: true,
+      },
+      // scale: 1.5, // Example animation: scale the image
+      rotationZ: -300, // Example animation: rotate the image
+      duration: 10,
+    });
+  }, []);
+
   return (
     <section class="exploration">
       <div class="container">
@@ -64,7 +79,20 @@ function Exploration() {
         </p>
       </div>
       <div class="background">
-        <canvas class="canvas" width="1920" height="1920"></canvas>
+        {/* <CanvasWithScrollAnimation imageUrl="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-dep-5.jpg" /> */}
+        <div className="h-universe-orbital">
+          <div className="h-universe-orbital-wrap">
+            <div className="h-universe-orbital-planet">
+              <div className="orbital saturn">
+                <div className="orbital-position">
+                  <div className="orbital-planet">
+                    <img src="../images/global.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

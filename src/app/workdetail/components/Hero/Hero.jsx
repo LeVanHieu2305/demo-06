@@ -80,7 +80,7 @@ function Hero() {
         </div>
         <div class="text-2">
           <p class="intro">
-            In honor of Columbia Pictures' 100th anniversary, we teamed up with
+            In honor of Columbia Pictures 100th anniversary, we teamed up with
             Watson Design Group to create a century-filled digital experience
             and quiz. This took visitors through entertainment history and a
             personalized journey of self-discovery, revealing their most

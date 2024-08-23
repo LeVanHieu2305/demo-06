@@ -53,7 +53,7 @@ function Recognition() {
               <p>
                 Exo Ape
                 <br />
-                Webby Nominee '23 <br />
+                Webby Nominee 23 <br />
                 <a href="" target="_blank" linktype="url">
                   The Webby Awards
                 </a>

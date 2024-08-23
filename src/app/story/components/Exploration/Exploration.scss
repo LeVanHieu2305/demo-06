@@ -76,10 +76,174 @@
     }
 
     .background {
-        height: 100vw;
+        bottom: 0;
+        height: 47.9166666667vw;
         left: 50%;
-        top: 55.5555555556vw;
         transform: translateX(-50%);
         width: 100vw;
+        position: absolute;
     }
+}
+
+
+
+@mixin mid-flex() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+@keyframes ani-orbital {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+@keyframes ani-planet {
+    0% {
+        transform: rotateX(-90deg) rotateY(360deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(-90deg) rotateY(0) rotateZ(0);
+    }
+}
+.h-universe-orbital {
+    position: relative;
+    transform: rotateZ(-20deg);
+    -webkit-transform: rotateZ(-20deg);
+    width: 100%;
+}
+
+.h-universe-orbital-wrap {
+    position: relative;
+    padding-top: 62%;
+    transform: rotateX(70deg);
+    transform-style: preserve-3d;
+}
+
+.h-universe-orbital-planet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+}
+
+.h-universe-orbital .orbital {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(255, 255, 255, 0.7);
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+}
+
+@media screen and (max-width: 450px) {
+    .h-universe-orbital .orbital {
+        left: 1em;
+    }
+}
+
+
+.h-universe-orbital .orbital.saturn {
+    width: 70em;
+    height: 70em;
+    margin-top: -11em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .h-universe-orbital .orbital.saturn {
+        width: 40em;
+        height: 40em;
+        margin-top: -9em;
+        margin-left: -6em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .h-universe-orbital .orbital.saturn {
+        width: 27em;
+        height: 27em;
+        margin-top: -6em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .h-universe-orbital .orbital.saturn {
+        width: 16em;
+        height: 16em;
+        margin-top: -3em;
+        margin-left: -2em;
+    }
+}
+
+.h-universe-orbital .orbital.saturn,
+.h-universe-orbital .orbital.saturn .orbital-planet,
+.h-universe-orbital .orbital.saturn .orbital-position {
+    animation-duration: 35s;
+}
+
+.h-universe-orbital .orbital.saturn .orbital-planet {
+    transform: rotateX(0);
+    font-size: 20em;
+}
+
+@media screen and (max-width: 1200px) {
+    .h-universe-orbital .orbital.saturn .orbital-planet {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .h-universe-orbital .orbital.saturn .orbital-planet {
+        font-size: 2em;
+    }
+}
+
+.h-universe-orbital .orbital-position {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 5.2rem;
+    height: 5.2rem;
+    margin-top: -1em;
+    margin-left: -1em;
+    transform-style: preserve-3d;
+    // animation: ani-planet linear infinite;
+}
+
+@media screen and (max-width: 1200px) {
+    .h-universe-orbital .orbital-position {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}
+
+.h-universe-orbital .orbital-planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    border-radius: 50%;
+    @include mid-flex();
+}
+
+.h-universe-orbital .orbital-planet img {
+    object-fit: contain;
 }

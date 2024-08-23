@@ -37,7 +37,7 @@ function DetailOne() {
           <p>
             For a century, Columbia Pictures has brought drama, suspense,
             laughter, and love to the big screen. With stories, memories, and
-            quotes spanning a hundred years, it's truly a celebration of fandom.
+            quotes spanning a hundred years, its truly a celebration of fandom.
             <br />
             <br />
             As a tribute to this fandom, Watson Design Group commissioned us to

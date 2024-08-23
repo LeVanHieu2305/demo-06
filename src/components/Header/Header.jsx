@@ -454,33 +454,33 @@ export const Header = ({ className }) => {
           </div>
         </div>
       </nav>
-      
-        <div className={`video-player ${isActive ? "active" : ""}`}>
-          <video
-            playsInline
-            muted
-            autoPlay
-            loop
-            ref={videoRef} 
-            class="video"
-            onClick={handleVideoClick}
-          >
-            <source src="../videos/play-reels.mp4" type="video/mp4" />
-          </video>
-          <div class="gradient"></div>
-          <div class="controls">
-            <button class="pause">Play</button>
-            <div class="timeline">
-              <input min="0" step="0.5" type="range" class="range" max="798" />
-              <progress
-                max="798"
-                class="progress"
-                value="10.901309999999999"
-              ></progress>
-            </div>
-            <button class="mute">Unmute</button>
+
+      <div className={`video-player ${isActive ? "active" : ""}`}>
+        <video
+          playsInline
+          muted
+          autoPlay
+          loop
+          ref={videoRef}
+          class="video"
+          onClick={handleVideoClick}
+        >
+          <source src="../videos/play-reels.mp4" type="video/mp4" />
+        </video>
+        <div class="gradient"></div>
+        <div class="controls">
+          <button class="pause">Play</button>
+          <div class="timeline">
+            <input min="0" step="0.5" type="range" class="range" max="798" />
+            <progress
+              max="798"
+              class="progress"
+              value="10.901309999999999"
+            ></progress>
           </div>
+          <button class="mute">Unmute</button>
         </div>
+      </div>
     </header>
   );
 };

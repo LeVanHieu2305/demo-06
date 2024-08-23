@@ -122,7 +122,7 @@ function Overview() {
               <h2 className="title">
                 <div className="title-mask">
                   <div className="title-line">
-                    Get an in-depth look at Rino &amp; Pelle in CommArts'
+                    Get an in-depth look at Rino &amp; Pelle in CommArts
                     Webpicks.
                   </div>
                 </div>

@@ -16,7 +16,7 @@ function HeroStory() {
         start: "60% 50%",
         end: "bottom 50%",
         scrub: true,
-        markers: true,
+        // markers: true,
         duration: 10,
       },
       ease: "power2.inOut",
