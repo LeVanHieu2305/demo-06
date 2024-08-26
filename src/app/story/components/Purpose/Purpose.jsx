@@ -14,7 +14,7 @@ function Purpose() {
         start: "-20% 80%", 
         end: "bottom 0%", 
         scrub: true, 
-        markers: true,
+        // markers: true,
       },
       x: -50,
       rotationZ: -76, 
