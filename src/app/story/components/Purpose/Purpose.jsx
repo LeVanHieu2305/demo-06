@@ -11,13 +11,13 @@ function Purpose() {
     gsap.to(".box", {
       scrollTrigger: {
         trigger: ".purpose",
-        start: "-20% 80%", 
-        end: "bottom 0%", 
-        scrub: true, 
+        start: "-20% 80%",
+        end: "bottom 0%",
+        scrub: true,
         // markers: true,
       },
       x: -50,
-      rotationZ: -76, 
+      rotationZ: -76,
     });
   }, []);
   return (
@@ -88,8 +88,7 @@ function Purpose() {
         {/* <CanvasWithScrollAnimation imageUrl="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-dep-5.jpg" /> */}
         <img src="../images/global.png" />
         <div class="box">
-          <div className="box-cr">
-          </div>
+          <div className="box-cr"></div>
         </div>
       </div>
     </section>

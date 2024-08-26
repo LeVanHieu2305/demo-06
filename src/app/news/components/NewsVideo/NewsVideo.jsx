@@ -25,7 +25,6 @@ function NewsVideo() {
     setIsActive(newActiveState);
   }, [currentImage]);
 
-
   const handleNext = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % totalItems);
   };

@@ -67,9 +67,7 @@ function Origin() {
         <div class="block">
           <div class="title">
             <div class="title-mask">
-              <div class="title-line">
-                Exo
-              </div>
+              <div class="title-line">Exo</div>
             </div>
             <small class="animate">[ĕk sō]</small>
           </div>
@@ -82,9 +80,7 @@ function Origin() {
         <div class="block">
           <div class="title">
             <div class="title-mask">
-              <div class="title-line">
-                Ape
-              </div>
+              <div class="title-line">Ape</div>
             </div>
             <small class="animate">[eyp]</small>
           </div>
@@ -97,7 +93,7 @@ function Origin() {
         </div>
       </div>
       <div class="background">
-      <video
+        <video
           src="../videos/video-3.mp4"
           playsInline={true}
           webkit-playsinline="true"

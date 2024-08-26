@@ -5,58 +5,58 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function FeaturedArticles() {
-    useEffect(() => {
-        const mediaData = [
-          { selector: '.media1', x: '0', y: '384px' },
-          { selector: '.media2', x: '-192px', y: '384px' },
-          { selector: '.media3', x: '192px', y: '384px' },
-          { selector: '.media4', x: '-384px', y: '384px' },
-          { selector: '.media5', x: '384px', y: '384px' },
-          // Thêm các media khác với các giá trị x, y tương ứng
-        ];
-    
-        mediaData.forEach((media) => {
-          gsap.to(media.selector, {
-            scrollTrigger: {
-              trigger: ".featured-articles",
-              start: "top top",
-              end: "bottom top",
-              scrub: true,
-            //   markers: true,
-            },
-            x: media.x,
-            y: media.y,
-            duration: 1,
-          });
-        });
+  useEffect(() => {
+    const mediaData = [
+      { selector: ".media1", x: "0", y: "384px" },
+      { selector: ".media2", x: "-192px", y: "384px" },
+      { selector: ".media3", x: "192px", y: "384px" },
+      { selector: ".media4", x: "-384px", y: "384px" },
+      { selector: ".media5", x: "384px", y: "384px" },
+      // Thêm các media khác với các giá trị x, y tương ứng
+    ];
 
-        gsap.to(".title-line-w", {
-            scrollTrigger: {
-              trigger: ".text-wrap",
-              start: "top 70%",
-            //   markers: true,
-            },
-            visibility: "inherit",
-            x: 0, // translateX
-            y: 0, // translateY
-            rotation: 0, // rotate
-            scale: 1, // scale
-            opacity: 1,
-            duration: .5, // animation duration in seconds
-          });
+    mediaData.forEach((media) => {
+      gsap.to(media.selector, {
+        scrollTrigger: {
+          trigger: ".featured-articles",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+          //   markers: true,
+        },
+        x: media.x,
+        y: media.y,
+        duration: 1,
+      });
+    });
 
-          // gsap.to(".featured-articles", {
-          //   yPercent: -30,
-          //   ease: "none",
-          //   scrollTrigger: {
-          //     trigger: ".featured-articles",
-          //     start: "top top",
-          //     end: "bottom top",
-          //     scrub: true,
-          //     markers: true,
-          //   },
-          // });
-      }, []);
+    gsap.to(".title-line-w", {
+      scrollTrigger: {
+        trigger: ".text-wrap",
+        start: "top 70%",
+        //   markers: true,
+      },
+      visibility: "inherit",
+      x: 0, // translateX
+      y: 0, // translateY
+      rotation: 0, // rotate
+      scale: 1, // scale
+      opacity: 1,
+      duration: 0.5, // animation duration in seconds
+    });
+
+    // gsap.to(".featured-articles", {
+    //   yPercent: -30,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: ".featured-articles",
+    //     start: "top top",
+    //     end: "bottom top",
+    //     scrub: true,
+    //     markers: true,
+    //   },
+    // });
+  }, []);
   return (
     <section className="featured-articles dark section-white">
       <ul className="media-wrapper">

@@ -30,9 +30,6 @@ export const Header = ({ className }) => {
     setIsActive(true); // Add 'active' class to 'overview'
   };
 
-  const handleVideoClick = () => {
-    setIsActive(false); // Remove 'active' class from 'overview'
-  };
   useEffect(() => {
     if (isActive) {
       videoRef.current.play(); // Play the video when active
@@ -103,6 +100,40 @@ export const Header = ({ className }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       tl.kill(); // Kill timeline to clean up GSAP resources
+    };
+  }, []);
+
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [progress, setProgress] = useState(0);
+
+  const handleVideoClick = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsActive(false); // Remove 'active' class from 'overview'
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    const currentTime = videoRef.current.currentTime;
+    const duration = videoRef.current.duration;
+    setProgress((currentTime / duration) * 100);
+  };
+
+  const handleRangeChange = (e) => {
+    const value = e.target.value;
+    videoRef.current.currentTime = (value / 100) * videoRef.current.duration;
+    setProgress(value);
+  };
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    videoElement.addEventListener("timeupdate", handleTimeUpdate);
+    return () => {
+      videoElement.removeEventListener("timeupdate", handleTimeUpdate);
     };
   }, []);
 
@@ -458,7 +489,6 @@ export const Header = ({ className }) => {
       <div className={`video-player ${isActive ? "active" : ""}`}>
         <video
           playsInline
-          muted
           autoPlay
           loop
           ref={videoRef}
@@ -469,16 +499,31 @@ export const Header = ({ className }) => {
         </video>
         <div class="gradient"></div>
         <div class="controls">
-          <button class="pause">Play</button>
+          <button className="pause" onClick={handleVideoClick}>
+            {isPlaying ? "Pause" : "Play"}
+          </button>
           <div class="timeline">
-            <input min="0" step="0.5" type="range" class="range" max="798" />
+            <input
+              min="0"
+              step="0.5"
+              type="range"
+              className="range"
+              max="100"
+              value={progress}
+              onChange={handleRangeChange}
+            />
             <progress
-              max="798"
-              class="progress"
-              value="10.901309999999999"
+              max="100"
+              className="progress"
+              value={progress}
             ></progress>
           </div>
-          <button class="mute">Unmute</button>
+          <button
+            className="mute"
+            onClick={() => (videoRef.current.muted = !videoRef.current.muted)}
+          >
+            {videoRef.current && videoRef.current.muted ? "Unmute" : "Mute"}
+          </button>
         </div>
       </div>
     </header>

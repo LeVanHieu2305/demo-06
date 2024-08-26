@@ -289,7 +289,12 @@ function Overview() {
           </div>
         </div>
         <div className="item">
-          <a target="_blank" href="" aria-label="Read article" className="media">
+          <a
+            target="_blank"
+            href=""
+            aria-label="Read article"
+            className="media"
+          >
             <img src="../images/news-01.webp" alt="news" type="image" />
           </a>
           <div className="meta">

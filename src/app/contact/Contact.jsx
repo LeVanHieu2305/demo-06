@@ -16,7 +16,11 @@ function Contact() {
   return (
     <div className="contact section-white">
       <div className="container">
-        <img src="../images/contact.webp" alt="exo ape contact" className="image" />
+        <img
+          src="../images/contact.webp"
+          alt="exo ape contact"
+          className="image"
+        />
         <h1 className="h1">Contact</h1>
         <h2 className="title">
           <div className="marquee">

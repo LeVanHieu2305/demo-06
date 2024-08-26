@@ -37,7 +37,7 @@ function FeaturedProjects() {
       rotation: 0, // rotate
       scale: 1, // scale
       opacity: 1,
-      duration: .5, // animation duration in seconds
+      duration: 0.5, // animation duration in seconds
     });
 
     // gsap.to(".featured-projects", {

@@ -4,42 +4,42 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export const Footer = () => {
-    // Images parallax
-    // useEffect(() => {
-    //   gsap.to(".footer", {
-    //     yPercent: -20,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: ".footer",
-    //       start: "top 100%",
-    //       end: "bottom top",
-    //       scrub: true,
-    //       markers: true,
-    //     },
-    //   });
-    //   gsap.to(".footer .container", {
-    //     yPercent: 0,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: ".footer",
-    //       start: "top 50%",
-    //       end: "bottom top",
-    //       scrub: true,
-    //       markers: true,
-    //     },
-    //   });
-    //   gsap.to(".footer .background", {
-    //     yPercent: 0,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: ".footer",
-    //       start: "top 50%",
-    //       end: "bottom top",
-    //       scrub: true,
-    //       markers: true,
-    //     },
-    //   });
-    // }, []);
+  // Images parallax
+  // useEffect(() => {
+  //   gsap.to(".footer", {
+  //     yPercent: -20,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".footer",
+  //       start: "top 100%",
+  //       end: "bottom top",
+  //       scrub: true,
+  //       markers: true,
+  //     },
+  //   });
+  //   gsap.to(".footer .container", {
+  //     yPercent: 0,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".footer",
+  //       start: "top 50%",
+  //       end: "bottom top",
+  //       scrub: true,
+  //       markers: true,
+  //     },
+  //   });
+  //   gsap.to(".footer .background", {
+  //     yPercent: 0,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".footer",
+  //       start: "top 50%",
+  //       end: "bottom top",
+  //       scrub: true,
+  //       markers: true,
+  //     },
+  //   });
+  // }, []);
   return (
     <footer className="footer sand section-beige">
       <div className="container">
