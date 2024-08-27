@@ -6,9 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function VideoFive() {
   return (
-    <section class="videofive has-padding-top dark">
-      <div class="container">
-        <video playsInline loop muted class="preview" autoPlay>
+    <section className="videofive has-padding-top dark">
+      <div className="container">
+        <video playsInline loop muted className="preview" autoPlay>
           <source
             src="../videos/columbia-pictures-video-05-recommendation-custom-sharable.mp4"
             type="video/mp4"

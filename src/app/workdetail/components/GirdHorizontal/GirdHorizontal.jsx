@@ -33,37 +33,37 @@ function GirdHorizontal() {
   }, []);
 
   return (
-    <section class="grid dark is-horizontal girdhorizontal" ref={gridRef}>
-      <div class="container">
-        <div class="row">
-          <div class="media">
+    <section className="grid dark is-horizontal girdhorizontal" ref={gridRef}>
+      <div className="container">
+        <div className="row">
+          <div className="media">
             <img src="../images/girdhorizontal-01.webp" alt="" />
           </div>
-          <div class="media">
+          <div className="media">
             <img src="../images/girdhorizontal-02.webp" alt="" />
           </div>
-          <div class="media">
+          <div className="media">
             <video playsInline loop muted autoPlay>
               <source src="../videos/girdhorizontal-03.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="media">
+          <div className="media">
             <img src="../images/girdhorizontal-04.webp" alt="" />
           </div>
         </div>
-        <div class="row">
-          <div class="media">
+        <div className="row">
+          <div className="media">
             <img src="../images/girdhorizontal-05.webp" alt="" />
           </div>
-          <div class="media">
+          <div className="media">
             <video playsInline loop muted autoPlay>
               <source src="../videos/girdhorizontal-06.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="media">
+          <div className="media">
             <img src="../images/girdhorizontal-07.webp" alt="" />
           </div>
-          <div class="media">
+          <div className="media">
             <img src="../images/girdhorizontal-08.webp" alt="" />
           </div>
         </div>

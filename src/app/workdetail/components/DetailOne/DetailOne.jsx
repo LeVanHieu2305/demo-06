@@ -6,34 +6,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 function DetailOne() {
   return (
-    <section class="text has-padding-top-and-bottom dark align-left detailone">
-      <div class="container">
-        <h2 class="title is-large">
-          <div class="title-mask">
-            <div class="title-line">Celebrating</div>
+    <section className="text has-padding-top-and-bottom dark align-left detailone">
+      <div className="container">
+        <h2 className="title is-large">
+          <div className="title-mask">
+            <div className="title-line">Celebrating</div>
           </div>
-          <div class="title-mask">
-            <div class="title-line">a Century</div>
+          <div className="title-mask">
+            <div className="title-line">a Century</div>
           </div>
-          <div class="title-mask">
-            <div class="title-line">of Cinema</div>
+          <div className="title-mask">
+            <div className="title-line">of Cinema</div>
           </div>
         </h2>
-        <h2 class="label">
+        <h2 className="label">
           <svg
             viewBox="0 0 12 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="icon"
+            className="icon"
           >
             <path
               d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"
               fill="currentColor"
             ></path>
           </svg>
-          <div class="text">Objective</div>
+          <div className="text">Objective</div>
         </h2>
-        <div class="body">
+        <div className="body">
           <p>
             For a century, Columbia Pictures has brought drama, suspense,
             laughter, and love to the big screen. With stories, memories, and

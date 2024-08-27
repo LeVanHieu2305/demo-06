@@ -6,24 +6,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 function MediaText() {
   return (
-    <section class="mediatext has-padding-bottom dark align-media-right">
-      <div class="container">
-        <div class="text">
-          <h2 class="label">
+    <section className="mediatext has-padding-bottom dark align-media-right">
+      <div className="container">
+        <div className="text">
+          <h2 className="label">
             <svg
               viewBox="0 0 12 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="icon"
+              className="icon"
             >
               <path
                 d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"
                 fill="currentColor"
               ></path>
             </svg>
-            <div class="text">A quiz shaped by you</div>
+            <div className="text">A quiz shaped by you</div>
           </h2>
-          <div class="body">
+          <div className="body">
             <p>
               Each run through the quiz&nbsp;presents the visitor with&nbsp;8
               interactive questions that gradually change based on their
@@ -36,7 +36,7 @@ function MediaText() {
             </p>
           </div>
         </div>
-        <div class="media">
+        <div className="media">
           <img src="../images/media-03.webp" alt="user interface of quiz" />
         </div>
       </div>

@@ -6,21 +6,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 function MockupMobileMultiple() {
   return (
-    <section class="mockup-mobile-multiple has-padding-top-and-bottom light has-three-images">
-      <div class="container">
-        <div class="media">
-          <img src="../images/mmm-01.webp" alt="" class="image" />
+    <section className="mockup-mobile-multiple has-padding-top-and-bottom light has-three-images">
+      <div className="container">
+        <div className="media">
+          <img src="../images/mmm-01.webp" alt="" className="image" />
         </div>
-        <div class="media">
-          <img src="../images/mmm-02.webp" alt="" class="image" />
+        <div className="media">
+          <img src="../images/mmm-02.webp" alt="" className="image" />
         </div>
-        <div class="media">
-          <img src="../images/mmm-03.webp" alt="" class="image" />
+        <div className="media">
+          <img src="../images/mmm-03.webp" alt="" className="image" />
         </div>
       </div>
-      <img src="../images/mmm-04.webp" alt="" type="image" class="background" />
-      <div class="top"></div>
-      <div class="bottom"></div>
+      <img src="../images/mmm-04.webp" alt="" type="image" className="background" />
+      <div className="top"></div>
+      <div className="bottom"></div>
     </section>
   );
 }

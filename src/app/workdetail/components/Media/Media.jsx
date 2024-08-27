@@ -6,13 +6,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Media() {
   return (
-    <section class="media light">
-      <div class="container">
-        <div class="assets">
+    <section className="media light">
+      <div className="container">
+        <div className="assets">
           <img src="../images/media-01.webp" alt="" />
         </div>
       </div>
-      <img src="../images/media-02.webp" alt="" class="background" />
+      <img src="../images/media-02.webp" alt="" className="background" />
     </section>
   );
 }

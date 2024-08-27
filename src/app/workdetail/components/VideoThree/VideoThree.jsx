@@ -6,9 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function VideoThree() {
   return (
-    <section class="videothree has-padding-top-and-bottom light">
-      <div class="container">
-        <video playsInline loop muted class="preview" autoPlay>
+    <section className="videothree has-padding-top-and-bottom light">
+      <div className="container">
+        <video playsInline loop muted className="preview" autoPlay>
           <source
             src="../videos/columbia-pictures-video-03-loading-sharable.mp4"
             type="video/mp4"

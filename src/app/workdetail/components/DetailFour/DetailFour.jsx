@@ -6,31 +6,31 @@ gsap.registerPlugin(ScrollTrigger);
 
 function DetailFour() {
   return (
-    <section class="text has-padding-top-and-bottom dark align-left detailfour">
-      <div class="container">
-        <h2 class="title is-normal">
-          <div class="title-mask">
-            <div class="title-line">Take the quiz</div>
+    <section className="text has-padding-top-and-bottom dark align-left detailfour">
+      <div className="container">
+        <h2 className="title is-normal">
+          <div className="title-mask">
+            <div className="title-line">Take the quiz</div>
           </div>
-          <div class="title-mask">
-            <div class="title-line">anytime, everywhere</div>
+          <div className="title-mask">
+            <div className="title-line">anytime, everywhere</div>
           </div>
         </h2>
-        <h2 class="label">
+        <h2 className="label">
           <svg
             viewBox="0 0 12 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="icon"
+            className="icon"
           >
             <path
               d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"
               fill="currentColor"
             ></path>
           </svg>
-          <div class="text">Mobile Experience</div>
+          <div className="text">Mobile Experience</div>
         </h2>
-        <div class="body">
+        <div className="body">
           <p>
             With Columbia Pictures enthusiasts spanning the globe, our priority
             was to make sure the quiz experience worked seamlessly on any device

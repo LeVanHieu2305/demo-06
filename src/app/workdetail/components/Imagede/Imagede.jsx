@@ -6,12 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Imagede() {
   return (
-    <section class="imagede has-padding-bottom dark is-contained">
-      <div class="container">
+    <section className="imagede has-padding-bottom dark is-contained">
+      <div className="container">
         <img
           src="../images/image-01.webp"
           alt="user interface of quiz dark theme"
-          class="image"
+          className="image"
         />
       </div>
     </section>

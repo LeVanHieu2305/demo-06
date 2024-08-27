@@ -47,30 +47,30 @@ function Hero() {
 
   }, []);
   return (
-    <header class="hero">
-      <div class="container">
-        <div class="text-1">
-          <h1 class="title">
-            <div class="title-mask">
-              <div class="title-line">100 Years</div>
+    <header className="hero">
+      <div className="container">
+        <div className="text-1">
+          <h1 className="title">
+            <div className="title-mask">
+              <div className="title-line">100 Years</div>
             </div>
-            <div class="title-mask">
-              <div class="title-line">Columbia</div>
+            <div className="title-mask">
+              <div className="title-line">Columbia</div>
             </div>
-            <div class="title-mask">
-              <div class="title-line">Pictures</div>
+            <div className="title-mask">
+              <div className="title-line">Pictures</div>
             </div>
           </h1>
-          <h2 class="subtitle">
-            <div class="text-mask">
-              <div class="text-line">Celebrating a Century of Cinema</div>
+          <h2 className="subtitle">
+            <div className="text-mask">
+              <div className="text-line">Celebrating a Century of Cinema</div>
             </div>
           </h2>
           <svg
             viewBox="0 0 11 10"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="icon-arrow"
+            className="icon-arrow"
           >
             <path
               d="M0 5.65612V4.30388L8.41874 4.31842L5.05997 0.95965L5.99054 0L10.9923 4.97273L6.00508 9.96L5.07451 9.00035L8.43328 5.64158L0 5.65612Z"
@@ -78,31 +78,31 @@ function Hero() {
             ></path>
           </svg>
         </div>
-        <div class="text-2">
-          <p class="intro">
+        <div className="text-2">
+          <p className="intro">
             In honor of Columbia Pictures 100th anniversary, we teamed up with
             Watson Design Group to create a century-filled digital experience
             and quiz. This took visitors through entertainment history and a
             personalized journey of self-discovery, revealing their most
             influential films and TV shows.
           </p>
-          <a href="https://columbia100.watson.la/" target="_blank" class="link is-dark">
-            <div class="wrap">
-              <div class="circle">
-                <div class="circle-fill"></div>
+          <a href="https://columbia100.watson.la/" target="_blank" className="link is-dark">
+            <div className="wrap">
+              <div className="circle">
+                <div className="circle-fill"></div>
                 <svg
                   viewBox="0 0 50 50"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="circle-outline"
+                  className="circle-outline"
                 >
                   <circle cx="25" cy="25" r="23"></circle>
                 </svg>
-                <div class="circle-icon">
+                <div className="circle-icon">
                   <svg
                     viewBox="0 0 8 8"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon-external"
+                    className="icon-external"
                   >
                     <path
                       d="M7.8816 0L7.8958 6.67451H6.5893V2.24377L0.937271 7.91L0 6.97273L5.66623 1.3065H1.23549V0H7.8816Z"
@@ -111,28 +111,28 @@ function Hero() {
                   </svg>
                 </div>
               </div>
-              <div class="label">
+              <div className="label">
                 Visit website
-                <div class="border"></div>
+                <div className="border"></div>
               </div>
             </div>
           </a>
-          <div class="info">
-            <span class="client">Watson Design Group</span>
-            <ul class="services">
-              <li class="service">Visual Design</li>
-              <li class="service">UI &amp; UX Design</li>
-              <li class="service">Web Development</li>
+          <div className="info">
+            <span className="client">Watson Design Group</span>
+            <ul className="services">
+              <li className="service">Visual Design</li>
+              <li className="service">UI &amp; UX Design</li>
+              <li className="service">Web Development</li>
             </ul>
-            <ul class="industries">
-              <li class="industry">Entertainment</li>
+            <ul className="industries">
+              <li className="industry">Entertainment</li>
             </ul>
-            <time class="date">February ‘2024</time>
+            <time className="date">February ‘2024</time>
           </div>
         </div>
       </div>
-      <div class="background image-parallax">
-        <img src="../images/workmana-011.webp" class="image" alt="" />
+      <div className="background image-parallax">
+        <img src="../images/workmana-011.webp" className="image" alt="" />
       </div>
     </header>
   );

@@ -49,42 +49,42 @@ function HeroStory() {
   }, []);
 
   return (
-    <header class="hero story-hero">
-      <div class="container">
-        <h2 class="label">
+    <header className="hero story-hero">
+      <div className="container">
+        <h2 className="label">
           <svg
             viewBox="0 0 12 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="icon"
+            className="icon"
           >
             <path
               d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"
               fill="currentColor"
             ></path>
           </svg>
-          <div class="text">Our Story</div>
+          <div className="text">Our Story</div>
         </h2>
-        <h1 class="title">
-          <div class="title-mask">
-            <div class="title-line">True</div>
+        <h1 className="title">
+          <div className="title-mask">
+            <div className="title-line">True</div>
           </div>
-          <div class="title-mask">
-            <div class="title-line">wonderers</div>
+          <div className="title-mask">
+            <div className="title-line">wonderers</div>
           </div>
-          <div class="title-mask">
-            <div class="title-line">look up at</div>
+          <div className="title-mask">
+            <div className="title-line">look up at</div>
           </div>
-          <div class="title-mask">
-            <div class="title-line">the sky.</div>
+          <div className="title-mask">
+            <div className="title-line">the sky.</div>
           </div>
         </h1>
-        <p class="intro">
+        <p className="intro">
           The story behind our name is one of exploration, creativity and
           curiosity.
         </p>
       </div>
-      <div class="background">
+      <div className="background">
         {/* <video
           className="videoo"
           playsInline

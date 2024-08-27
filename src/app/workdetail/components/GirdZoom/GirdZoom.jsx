@@ -41,51 +41,51 @@ function GirdZoom() {
     });
   }, []);
   return (
-    <section class="gridzoom dark is-exploded">
-      <div class="container">
-        <div class="wrapper" ref={wrapperRef}>
-          <div class="media">
+    <section className="gridzoom dark is-exploded">
+      <div className="container">
+        <div className="wrapper" ref={wrapperRef}>
+          <div className="media">
             <div>
-              <div class="mask">
-                <img src="../images/girdzoom-01.webp" alt="" class="image" />
+              <div className="mask">
+                <img src="../images/girdzoom-01.webp" alt="" className="image" />
               </div>
             </div>
           </div>
-          <div class="media">
-            <video playsInline loop muted autoPlay class="image">
+          <div className="media">
+            <video playsInline loop muted autoPlay className="image">
               <source src="../videos/girdzoom-02.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="media">
+          <div className="media">
             <div>
-              <div class="mask">
-                <img src="../images/girdzoom-03.webp" alt="" class="image" />
+              <div className="mask">
+                <img src="../images/girdzoom-03.webp" alt="" className="image" />
               </div>
             </div>
           </div>
-          <div class="media">
+          <div className="media">
             <div>
-              <div class="mask">
-                <img src="../images/girdzoom-04.webp" alt="" class="image" />
+              <div className="mask">
+                <img src="../images/girdzoom-04.webp" alt="" className="image" />
               </div>
             </div>
           </div>
-          <div class="media">
+          <div className="media">
             <div>
-              <div class="mask">
-                <img src="../images/girdzoom-05.webp" alt="" class="image" />
+              <div className="mask">
+                <img src="../images/girdzoom-05.webp" alt="" className="image" />
               </div>
             </div>
           </div>
-          <div class="media">
-            <video playsInline loop muted autoPlay class="image">
+          <div className="media">
+            <video playsInline loop muted autoPlay className="image">
               <source src="../videos/girdzoom-06.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="media">
+          <div className="media">
             <div>
-              <div class="mask">
-                <img src="../images/girdzoom-07.webp" alt="" class="image" />
+              <div className="mask">
+                <img src="../images/girdzoom-07.webp" alt="" className="image" />
               </div>
             </div>
           </div>

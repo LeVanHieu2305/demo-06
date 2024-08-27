@@ -6,9 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function VideoTwo() {
   return (
-    <section class="videotwo has-padding-bottom dark">
-      <div class="container">
-        <video playsInline loop muted class="preview" autoPlay>
+    <section className="videotwo has-padding-bottom dark">
+      <div className="container">
+        <video playsInline loop muted className="preview" autoPlay>
           <source
             src="../videos/columbia-pictures-video-02-mechanics-outlined.mp4"
             type="video/mp4"
