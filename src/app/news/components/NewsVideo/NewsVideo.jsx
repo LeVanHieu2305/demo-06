@@ -9,7 +9,8 @@ function NewsVideo() {
   const [currentImage, setCurrentImage] = useState(0);
   const totalItems = 6; // Tổng số items (từ 0 đến 5)
   const [isActive, setIsActive] = useState(Array(totalItems).fill(false));
-
+  const videoRefs = useRef([]); 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % totalItems);
@@ -23,6 +24,19 @@ function NewsVideo() {
       index === currentImage ? true : false
     );
     setIsActive(newActiveState);
+
+       // Dừng tất cả các video
+       videoRefs.current.forEach((video, index) => {
+        if (video) {
+          video.pause();
+        }
+      });
+  
+      // Chạy video của item hiện tại nếu nó active
+      if (videoRefs.current[currentImage]) {
+        videoRefs.current[currentImage].play();
+      }
+
   }, [currentImage]);
 
   const handleNext = () => {

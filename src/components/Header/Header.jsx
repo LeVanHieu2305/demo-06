@@ -107,10 +107,10 @@ export const Header = ({ className }) => {
   const [progress, setProgress] = useState(0);
 
   const handleVideoClick = () => {
-    if (videoRef.current.paused) {
+    if (videoRef.current.paused) {      
       videoRef.current.play();
-      setIsActive(false); // Remove 'active' class from 'overview'
       setIsPlaying(true);
+      setIsActive(false); // Remove 'active' class from 'overview'
     } else {
       videoRef.current.pause();
       setIsPlaying(false);

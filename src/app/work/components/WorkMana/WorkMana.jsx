@@ -74,8 +74,8 @@ function WorkMana() {
         scrub: 0.5,
         snap: 1 / (project.length - 1),
         start: "top top",
-        end: "+=400000",
-        // markers: true,
+        end: "+=1000000",
+        markers: true,
         onUpdate: (self) => {
           const index = Math.round(self.progress * (project.length - 1));
           setCurrentIndex(index);
