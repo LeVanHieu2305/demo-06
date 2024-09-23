@@ -274,7 +274,7 @@ export const Header = ({ className }) => {
       <nav className="nav" ref={navRef}>
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="/work" className="nav-link">
+            <a href="/workdetail" className="nav-link">
               Work
             </a>
           </li>
@@ -353,7 +353,7 @@ export const Header = ({ className }) => {
             <ul className="main">
               <li className="main-link">
                 <a
-                  href="/work"
+                  href="/workdetail"
                   className="main-line"
                   onMouseEnter={() => setCurrentImage(0)}
                 >
@@ -479,13 +479,13 @@ export const Header = ({ className }) => {
                 <button
                   aria-label="open menu"
                   className="link-item is-reel"
-                  onClick={handleReelClick}
+                  // onClick={handleReelClick}
                 >
                   Play Reel
                 </button>
               </li>
               <li className="sub-link">
-                <a href="/story" className="link-item">
+                <a href="#" className="link-item">
                   Our Story
                 </a>
               </li>
