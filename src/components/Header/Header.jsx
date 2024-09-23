@@ -40,7 +40,6 @@ export const Header = ({ className }) => {
   
   const cursor = cursorRef.current;
   const handleMouseMove = (e) => {
-    console.log('eeeee',e);
     
     targetX.current = e.clientX - 10;
     targetY.current = e.clientY - 10;
