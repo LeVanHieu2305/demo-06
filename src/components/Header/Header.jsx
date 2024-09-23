@@ -486,7 +486,7 @@ export const Header = ({ className }) => {
         </div>
       </nav>
 
-      <div className={`video-player ${isActive ? "active" : ""}`}>
+      {/* <div className={`video-player ${isActive ? "active" : ""}`}>
         <video
           playsInline
           autoPlay
@@ -525,7 +525,7 @@ export const Header = ({ className }) => {
             {videoRef.current && videoRef.current.muted ? "Unmute" : "Mute"}
           </button>
         </div>
-      </div>
+      </div> */}
     </header>
   );
 };
