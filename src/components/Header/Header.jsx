@@ -37,36 +37,29 @@ export const Header = ({ className }) => {
       videoRef.current.pause(); // Pause the video when not active
     }
   }, [isActive]);
-  
-  const cursor = cursorRef.current;
-  const handleMouseMove = (e) => {
-    
-    targetX.current = e.clientX - 10;
-    targetY.current = e.clientY - 10;
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    const handleMouseMove = (e) => {
+      targetX.current = e.clientX - 10;
+      targetY.current = e.clientY - 10;
+    };
 
-    currentX.current += (targetX.current - currentX.current) * 0.2;
-    currentY.current += (targetY.current - currentY.current) * 0.2;
-    cursor.style.top = `${currentY.current + window.scrollY}px`;
-    cursor.style.left = `${currentX.current}px`;
-  };
+    const animate = () => {
+      currentX.current += (targetX.current - currentX.current) * 0.2;
+      currentY.current += (targetY.current - currentY.current) * 0.2;
+      cursor.style.top = `${currentY.current + window.scrollY}px`;
+      cursor.style.left = `${currentX.current}px`;
+      requestRef.current = requestAnimationFrame(animate);
+    };
 
-  // const animate = () => {
-  //   currentX.current += (targetX.current - currentX.current) * 0.2;
-  //   currentY.current += (targetY.current - currentY.current) * 0.2;
-  //   cursor.style.top = `${currentY.current + window.scrollY}px`;
-  //   cursor.style.left = `${currentX.current}px`;
-  //   requestRef.current = requestAnimationFrame(animate);
-  // };
+    document.addEventListener("mousemove", handleMouseMove);
+    requestRef.current = requestAnimationFrame(animate);
 
-  document.addEventListener("mousemove", handleMouseMove);
-  // requestRef.current = requestAnimationFrame(animate);
-  // useEffect(() => {
-
-  //   return () => {
-  //     document.removeEventListener("mousemove", handleMouseMove);
-  //     cancelAnimationFrame(requestRef.current);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(requestRef.current);
+    };
+  }, []);
   useEffect(() => {
     const wordmark = wordmarkRef.current;
     const brandmark = brandmarkRef.current;
@@ -316,7 +309,7 @@ export const Header = ({ className }) => {
                 className={`image-item ${currentImage === 0 ? "active" : ""}`}
               >
                 <img
-                  src="../images/work.webp"
+                  src="../images/workdetail.webp"
                   alt="exo ape contact 2"
                   className="image"
                 />
