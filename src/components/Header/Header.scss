@@ -612,6 +612,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s linear;
+    display: none;
     &.active {
       opacity: 1;
       visibility: inherit;
