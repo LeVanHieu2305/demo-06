@@ -489,7 +489,6 @@ export const Header = ({ className }) => {
       <div className={`video-player ${isActive ? "active" : ""}`}>
         <video
           playsInline
-          autoPlay
           loop
           ref={videoRef}
           className="video"
